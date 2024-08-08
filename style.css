@@ -1,0 +1,58 @@
+* {
+    margin: 0;padding: 0;
+    color: #0D1317;
+}
+/* //coolors site for clours in styling. */
+body, html {
+    height: 100%; /* Ensure the gradient covers the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    /* #ffc8dd, #ffafcc, #bde0fe */
+    background: linear-gradient(#cdb4db,  #a2d2ff, #ffc8dd, #ffafcc, #bde0fe);
+    background-size: 400% 400%; /* Make the gradient large enough to animate */
+    animation: gradientAnimation 5s ease infinite; /* Animate the gradient */
+    text-align: center;
+}
+h1 {
+    font-size: 5vh;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    /* means 60 % of containers height */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 1vmin
+}
+.box {
+    background-color: #ffe5ec;
+    /* as height of game is 60% thus height of each box must be 20% but 18 is good */
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+}
+#resetButton {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    background-color: #f5365c;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+p {
+    display: none;
+    font-size: 1rem;;
+}
